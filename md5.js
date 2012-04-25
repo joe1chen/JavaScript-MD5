@@ -20,6 +20,10 @@
 /*jslint bitwise: true */
 /*global unescape, define */
 
+if (typeof blueimp == 'undefined') {
+    blueimp = {};
+}
+
 (function ($) {
     'use strict';
 
@@ -273,4 +277,4 @@
     } else {
         $.md5 = md5;
     }
-}(this));
+}(blueimp));

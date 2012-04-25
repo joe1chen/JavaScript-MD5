@@ -96,5 +96,5 @@
 
 }(
     this.expect || require('expect.js'),
-    this.md5 || require('../md5').md5
+    this.blueimp.md5 || require('../md5').blueimp.md5
 ));

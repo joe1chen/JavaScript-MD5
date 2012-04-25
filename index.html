@@ -71,16 +71,16 @@
         </div>
     </div>
 </div>
-<script src="md5.min.js"></script>
+<script src="md5.js"></script>
 <!-- jQuery and Bootstrap JS are not required, but included for the demo -->
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 <script src="http://blueimp.github.com/cdn/js/bootstrap.min.js"></script>
 <script>
 /*global jQuery, window */
 (function ($) {
     'use strict';
     var calculate = function () {
-            $('#result').html(window.md5($('#input').val()));
+            $('#result').html(window.blueimp.md5($('#input').val()));
         },
         init = function () {
             $('#input').val('日本');
